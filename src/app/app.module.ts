@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgBrazil } from 'ng-brazil';
+import { TextMaskModule } from 'angular2-text-mask';
+import { CurrencyMaskModule } from "ng2-currency-mask";
 import {
   MatButtonModule,
   MatToolbarModule,
@@ -8,7 +11,6 @@ import {
   MatFormFieldModule,
   MatInputModule
 } from '@angular/material';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BarInfoComponent } from './components/bar-info/bar-info.component';
@@ -44,7 +46,10 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     MatIconModule,
     MatFormFieldModule,
     MatInputModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    TextMaskModule,
+    NgBrazil,
+    CurrencyMaskModule
     
   ],
   providers: [],

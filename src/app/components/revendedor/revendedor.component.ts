@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { RevendedorService } from 'src/app/services/revendedor.service';
 import { Router } from '@angular/router';
 import { Revendedor } from 'src/app/models/revendedor.model';
+import { MASKS, NgBrazilValidators } from 'ng-brazil';
 
 
 @Component({
@@ -13,6 +14,7 @@ import { Revendedor } from 'src/app/models/revendedor.model';
 })
 export class RevendedorComponent implements OnInit {
 
+  public MASKS = MASKS;
   formRevendedor: FormGroup;
   validation: string;
   revendedor: Revendedor;
@@ -26,7 +28,7 @@ export class RevendedorComponent implements OnInit {
   initForm(){
     this.formRevendedor = this.form.group({
       nome: ['', Validators.required],
-      cpf: ['', Validators.required],
+      cpf: ['', [Validators.required, <any>NgBrazilValidators.cpf]],
       email: ['', Validators.required],
       senha: ['', Validators.required],
     });

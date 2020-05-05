@@ -2,17 +2,22 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
+## Mockups
+![Tela de Login](C:/Users/Jessica/Pictures/Boticario/Login.png)
+
 ## Technologies
 
-Angular 7
-Bootstrap 4
-Firebase (database to simulate back response)
+> Angular 7
+> Bootstrap 4
+> Firebase (database to simulate back response)
 
 ## Install
 
 Run `npm install`
 
-## Development
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Code scaffolding
 

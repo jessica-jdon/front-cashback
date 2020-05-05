@@ -116,3 +116,7 @@ p.text-right {
   color: #ff0000;
   font-size: 0.8rem;
 }
+
+input#inputValor {
+  text-align: left !important;
+}

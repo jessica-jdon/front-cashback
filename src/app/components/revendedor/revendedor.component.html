@@ -18,7 +18,7 @@
             </div>
             <div class="form-label-group">
               <label for="inputCpf">CPF</label>
-              <input class="form-control" formControlName="cpf" id="inputCpf" required>
+              <input class="form-control" formControlName="cpf" id="inputCpf" cpf [textMask]="{mask: MASKS.cpf.textMask}" required>
               <div *ngIf="formRevendedor.get('cpf').invalid && (formRevendedor.get('cpf').dirty || formRevendedor.get('cpf').touched)"
                 class="msg-error">
                 <div *ngIf="formRevendedor.get('cpf').errors.required">
