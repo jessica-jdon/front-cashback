@@ -1,0 +1,45 @@
+p {
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #000000;
+    color: #fff;
+    transition: all 0.3s;
+}
+#sidebar .sidebar-header {
+    padding-top: 0.5rem;
+}
+#sidebar .sidebar-header .icon-perfil {
+    font-size: 10em;
+    background-color: transparent !important;
+    padding: 0px !important;
+}
+
+hr.my-4 {
+    border-top-color: white;
+}
+
+nav .footer-sair {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.btn-logout{
+    width: 200px;
+    background-color: transparent;
+    color: white;
+}

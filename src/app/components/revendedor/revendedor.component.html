@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+      <div class="card card-revendedor my-5">
+        <div class="card-body">
+          <h5 class="card-title text-center">Revendedor</h5>
+          <form class="form-revendedor" [formGroup]="formRevendedor" novalidate (ngSubmit)="onSubmit()">
+            <div class="form-label-group">
+              <label for="inputNome">Nome Completo</label>
+              <input class="form-control" id="inputNome" formControlName="nome" required autofocus>
+            </div>
+            <div class="form-label-group">
+              <label for="inputCpf">CPF</label>
+              <input class="form-control" formControlName="cpf" id="inputCpf" required>
+            </div>
+            <div class="form-label-group">
+              <label for="inputEmail">E-mail</label>
+              <input class="form-control" formControlName="email" id="inputEmail" required>
+            </div>
+            <div class="form-label-group">
+              <label for="inputSenha">Senha</label>
+              <input class="form-control" formControlName="senha" id="inputSenha" required>
+            </div> 
+            <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit" [disabled]="!formRevendedor.valid">Salvar</button>
+            <button class="btn btn-lg btn-registrar btn-block text-uppercase" type="button" (click)="onCancel()"> Cancelar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

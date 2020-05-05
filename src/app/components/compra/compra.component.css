@@ -1,0 +1,113 @@
+.form-group {
+  padding-top: 0.5rem;
+}
+
+.container {
+    padding-left: 200px;
+}
+.card-compra {
+    border: 0;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  }
+
+.card-compra .card-body {
+  padding: 0.5rem;
+}
+
+p.card-text {
+  margin: 0rem;
+  font-size: x-large;
+}
+
+.form-compra {
+  width: 100%;
+}
+
+p.text-right {
+  margin-bottom: 0px;
+}
+
+.text-left {
+  width: 3rem;
+}
+
+.card-footer.bg-transparent.card {
+  padding: 0.2rem;
+}
+.card-header.text-center {
+  padding: 0rem 0.25rem;
+}
+.text-right {
+  font-size: small;
+}
+.text-codigo {
+  font-size: xx-small;
+}
+.btn-registrar {
+    color: white;
+    background-color: #000;
+  }
+
+.btn-salvar {
+  background-color: #8dcb78;
+}
+
+.card-compra.border-dark.mb-3 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.card-header.text-center.avaliacao {
+    background-color: #fffaaa;
+}
+
+.card-header.text-center.aprovado {
+    background-color: #c1ffaa;
+}
+
+.card-header.text-center.reprovado {
+    background-color: #fdd6b8;
+}
+
+.card-footer #footer-cash {
+  display: flex;
+}
+.card-footer #footer-cash #footer-cash-icon {
+  margin: 0.5rem 0.8rem 0rem 0.3rem;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  border-radius: 2rem;
+  height: 3rem;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}

@@ -1,0 +1,26 @@
+<div class="container">
+   <div class="row">
+     <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+       <div class="card card-signin my-5">
+         <div class="card-body">
+           <h5 class="card-title text-center">O Boticário</h5>
+           <form class="form-signin" novalidate [formGroup]="form">
+            <h5 class="text-center">{{validation}}</h5>
+             <div class="form-label-group">
+               <label for="inputEmail">Email</label>
+               <input class="form-control" (change)="limpamsg()" (keyup.enter)="acessar()" formControlName="email" name="t-inputEmail" id="inputEmail" required autofocus>
+             </div>
+             <div class="form-label-group">
+               <label for="inputSenha">Senha</label>
+               <input class="form-control" (change)="limpamsg()" (keyup.enter)="acessar()" id="inputSenha" type="password" formControlName="senha" name="t-inputSenha" required>
+             </div>
+             <button class="btn btn-lg btn-primary btn-block text-uppercase" type="button" (click)="acessar()">Logar</button>
+             <hr class="my-4">
+             <button class="btn btn-lg btn-registrar btn-block text-uppercase" type="button"  (click)="abrirCadastro()"> Registrar-se</button>
+           </form>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+
