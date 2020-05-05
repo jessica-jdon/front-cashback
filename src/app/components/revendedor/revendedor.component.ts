@@ -37,12 +37,15 @@ export class RevendedorComponent implements OnInit {
       this.validation = `Verifique os campos obrigatórios!`
       return;
     }
+    this.validation = ""
     this.revendedor = this.formRevendedor.value
 
     this.service.save(this.revendedor)
     .then(
       res => {
+        this.validation = `Registro salva com sucesso!`
         this.formRevendedor.reset();
+        this.router.navigate(['']);
       }
     )
   }

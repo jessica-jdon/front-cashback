@@ -76,3 +76,8 @@
     color: white;
     background-color: #8dcb78;
   }
+
+  .msg-error {
+    color: #ff0000;
+    font-size: 0.8rem;
+  }

@@ -13,15 +13,33 @@
             <div class="form-label-group">
               <label for="inputCodigo">Código</label>
               <input class="form-control" id="inputCodigo" formControlName="codigo" 
-                minlength="1" maxlength="50" required autofocus>
+                minlength="1" maxlength="10" required autofocus>
+              <div *ngIf="formCompra.get('codigo').invalid && (formCompra.get('codigo').dirty || formCompra.get('codigo').touched)"
+                class="msg-error">
+                <div *ngIf="formCompra.get('codigo').errors.required">
+                  Código é um campo obrigatório.
+                </div>
+              </div>
             </div>
             <div class="form-label-group">
               <label for="inputValor">Valor</label>
               <input class="form-control" type="number" min="0" value="0" step=".01" formControlName="valor" id="inputValor" required>
+              <div *ngIf="formCompra.get('valor').invalid && (formCompra.get('valor').dirty || formCompra.get('valor').touched)"
+                class="msg-error">
+                <div *ngIf="formCompra.get('valor').invalid">
+                  Valor inválido
+                </div>
+              </div>
             </div>
             <div class="form-label-group">
               <label for="inputData">Data</label>
               <input class="form-control" type="date" formControlName="data" id="inputData" required>
+              <div *ngIf="formCompra.get('data').invalid && (formCompra.get('data').dirty || formCompra.get('data').touched)"
+                class="msg-error">
+                <div *ngIf="formCompra.get('data').errors.required">
+                  Data é um campo obrigatório.
+                </div>
+              </div>
             </div>
             <br>
             <div class="form-group">
