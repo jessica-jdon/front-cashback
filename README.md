@@ -2,9 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
-## Mockups
-![Tela de Login](C:/Users/Jessica/Pictures/Boticario/Login.png)
-
 ## Technologies
 
 > Angular 7
