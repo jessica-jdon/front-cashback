@@ -2,9 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.23.
 
-## Development server
+## Technologies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Angular 7
+Bootstrap 4
+Firebase (database to simulate back response)
+
+## Install
+
+Run `npm install`
+
+## Development
 
 ## Code scaffolding
 
